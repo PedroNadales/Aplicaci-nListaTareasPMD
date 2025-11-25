@@ -71,7 +71,15 @@ El proyecto sigue la arquitectura típica de Android con los siguientes componen
 La base de datos `notes.db` contiene una tabla llamada `notes` con la siguiente estructura:
 
 ## 
-
+CREATE TABLE notes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    content TEXT,
+    date TEXT,
+    important INTEGER DEFAULT 0,
+    rating REAL DEFAULT 0,
+    priority INTEGER DEFAULT 0
+)
 ## 
 
 ## 6\. Flujo de la Aplicación
